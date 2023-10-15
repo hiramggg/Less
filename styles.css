@@ -1,0 +1,49 @@
+body {
+  background-color: white;
+  flex-direction: column;
+  text-align: center;
+}
+body .container {
+  width: 50%;
+  margin: auto;
+}
+body form {
+  background-color: #db96e9;
+}
+body form fieldset {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+body form fieldset legend {
+  color: #7bff00;
+}
+body form fieldset ul {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+body form fieldset li {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px;
+}
+body form fieldset ul #check1 {
+  background-color: #001799;
+}
+body form fieldset ul #check2 {
+  background-color: #007e1f;
+}
+body form fieldset ul #check3 {
+  background-color: #00d9ff;
+}
+body form fieldset ul #check4 {
+  background-color: #d6c02e;
+}
+body form fieldset ul #check5 {
+  background-color: #ec4141;
+}
+body form fieldset button {
+  width: 50%;
+}

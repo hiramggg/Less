@@ -1,0 +1,56 @@
+@mainColor: rgb(219, 150, 233);
+@arreglo: #001799, #007e1f, #00d9ff, #d6c02e, #ec4141;
+
+.cont(@count) when (@count > 0) {
+    .cont((@count - 1));
+    #check@{count}{
+        background-color: extract(@arreglo,@count);
+    }
+} 
+
+body{
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+
+    .container{
+        width: 50%;
+        margin: auto;
+        
+    }
+
+    form{
+        background-color: @mainColor;
+
+        fieldset{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
+            legend {
+                color: rgb(123, 255, 0); 
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+            }
+            li{
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+            }
+
+            ul {
+                .cont(5)
+            }
+
+            button{
+                width: 50%;
+            }
+        }
+    }
+ 
+
+}
