@@ -3,42 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lessssssss</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <form>
-        <fieldset>
-        <fieldset>
-            <legend>
-                Formulario de acceso
-            </legend>
-        <fieldset>
-            <fieldset>
-                <legend>
-                    Correo Electronico
-                </legend>
-                <input type="text" name="">
-            </fieldset>
-            <fieldset>
-                <legend>
-                    Password
-                </legend>
-                <input type="text" name="">
-            </fieldset>
-                <ul>
-                    <li id="check1"><input type="checkbox">Administrador</button></li>
-                    <li id="check2"><input type="checkbox">Gerente</button></li>
-                    <li id="check3"><input type="checkbox">Propietario</button></li>
-                    <li id="check4"><input type="checkbox">Agente de Ventas</button></li>
-                    <li id="check5"><input type="checkbox">Prospecto</button></li>
-                </ul>
+    
+    <div class="container">
+        <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+            </li>
+          </ul>
+        <div class="row">
             
-            <button>Acceder</button>
-        </fieldset>
-    </fieldset>
-</fieldset>
-    </form>
-    <a href="">¿olvido su contraseña?</a>
+            <div class="col-lg-6 col-md-4 rounded-start shadow-lg border border-danger">
+                <img class="img-fluid rounded mx-auto d-block" src="phone.jpg" >
+            </div>
+            <div class="col-lg-6 col-md-8 col-rounded-start shadow-lg border bg-light">
+                
+                <form class="m-5">
+
+
+                    <img style="width: 10%;" class="img-fluid img-thumbnail rounded-start mt-4" src="opera.png"  >
+                    <h3 class=" mt-4 mb-3">
+                        Metete a tu cuenta
+                    </h3>
+
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </form>
+            </div>
+
+            </div>
+        
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
