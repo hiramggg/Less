@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SaludoController;
+use App\Http\Controllers\SaludarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,5 +44,5 @@ Route::get('/saludos/{nombre}/{apellido?}', function ($nombre, $apellido = null)
 
 Route::get('/bienvenida', [SaludoController::class, 'saludar']);
 
-
+Route::get('/saludo/{nombre}', [SaludarController::class, 'saludar']);
 
